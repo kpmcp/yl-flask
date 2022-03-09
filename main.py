@@ -27,11 +27,6 @@ def load_user(user_id):
     return db_sess.query(User).get(user_id)
 
 
-@app.route("/heroku")
-def heroku():
-    return "Привет от приложения Flask"
-
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()

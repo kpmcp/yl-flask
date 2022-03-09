@@ -10,7 +10,6 @@ from first_blog.data import User, News, news_api, db_session, NewsListResource, 
 from first_blog.forms import NewsForm, RegisterForm, LoginForm
 
 app = Flask(__name__)
-run_with_ngrok(app)
 api = Api(app)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(
